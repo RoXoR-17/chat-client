@@ -7,7 +7,7 @@ export const to_Encrypt = (text) => {
   var encrypted = CryptoJS.AES.encrypt(text, secret_key).toString();
   // var encrypted = aes256.encrypt(secret_key, text);
   return encrypted;
-};;
+};
 
 export const to_Decrypt = (cipher, username) => {
   if (cipher.startsWith("Welcome")) {
@@ -22,4 +22,4 @@ export const to_Decrypt = (cipher, username) => {
   var decrypted = bytes.toString(CryptoJS.enc.Utf8);
   // var decrypted = aes256.decrypt(secret_key, cipher);
   return decrypted;
-};;
+};
